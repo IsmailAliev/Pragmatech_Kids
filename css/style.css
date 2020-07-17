@@ -21,13 +21,13 @@
   align-items: center;
   width: 100%;
   justify-content: flex-end;
-  margin-right: 50px;
+  margin-right: 30px;
 }
 #main .navbar .menu .menu-items ul {
   display: flex;
 }
 #main .navbar .menu .menu-items ul li {
-  margin-right: 10px;
+  margin-right: 20px;
 }
 #main .navbar .menu .menu-items ul li a {
   color: white;
@@ -307,6 +307,10 @@
   height: calc(25% * 2);
   display: flex;
   justify-content: space-around;
+}
+#courses .course-platform .course-platform-block .course-platform-inner-block .course-platform-inner .course-items {
+  width: 33%;
+  text-align: -webkit-center;
 }
 #courses .course-platform .course-platform-block .course-platform-inner-block .course-platform-inner .course-items .course-items-img {
   width: 80px;
