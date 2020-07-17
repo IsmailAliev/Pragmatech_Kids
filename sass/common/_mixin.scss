@@ -1,0 +1,124 @@
+
+@mixin df-jcc {
+    display: flex;
+    justify-content: center;
+}
+
+// button
+@mixin button {
+    background: $mainColor;
+    box-sizing: border-box;
+    padding: 14px 35px;
+    border-radius: 20px;
+    cursor: pointer;
+    a{
+        color: white;
+        font-size: $MainF-S;
+        font-weight: 700;
+    }
+&:hover{
+    background: #26e385;
+}
+&:active{
+    transform: translateY(4px);
+}
+}
+
+// section area
+@mixin section {
+    width: 100%;
+    height: 820px;
+}
+
+// header area
+@mixin header {
+    width: 100%;
+    height: 80px;
+}
+
+@mixin header-text-h2 {
+    text-align: center;
+    font-size: 1.875rem;
+    font-weight: 400;
+}
+
+@mixin header-text-p {
+    text-align: center;
+    font-size: $MainF-S;
+    font-weight: 300;
+}
+
+// columns
+
+@mixin column-block {
+    width: 100%;
+    height: 350px;
+}
+
+@mixin column-container {
+    width: 90%;
+}
+
+@mixin section-columns {
+    width: calc(100% / 3);
+    margin: 0 20px 0 20px;
+    border-radius: 8px;
+}
+
+// course-events-inner
+@mixin event-box {
+    background-image: url(../img/amoeba-2.png), url(../img/amoeba-1@2x.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    position: relative;
+    box-shadow: 0 10px 1rem rgba(0,0,0,.16);
+    img{
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, 5px);
+    }
+    .events-text-button{
+        height: 100px;
+        position: absolute;
+        top: 70%;
+        left: 50%;
+        transform: translate(-50%, 0);
+        p{
+           font-size: 18px;
+           color: white;
+           font-weight: 400;
+           text-align: center; 
+        }
+        .events-button{
+            @include df-jcc;
+            margin-top: 25px;
+        }
+    }
+}
+
+// explore section
+
+@mixin explore-items-head {
+    border-radius: 20px;
+    border-top: 170px solid transparent;
+    box-shadow: 0 3px 6px rgba(0,0,0,.16);
+    position: relative;
+    transition: 500ms ease;
+    img{
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -115px);
+    }
+&:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+}
+    .explore-inner-text{
+        width: 210px;
+        height: 210px;
+        margin: 0 auto;
+        margin-top: 90px;
+        text-align: center;
+        line-height: 2;
+    }
+}

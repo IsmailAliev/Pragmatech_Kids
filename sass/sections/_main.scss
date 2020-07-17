@@ -1,0 +1,77 @@
+#main{
+    width: 100%;
+    height: 600px;
+    background-image: url(../img/hero-mc-panda.svg), linear-gradient(180deg,#0d87c7 15%,#57caff 85%);;
+    background-position: right bottom;
+    background-size: inherit;
+    background-repeat: no-repeat;
+    .navbar{
+        width: calc(100% - 5px);
+        height: 100px;
+        display: $dF;
+        align-items: $AiC;
+        .logo{
+            img{
+                width: 200px;
+                height: 110px;
+            }
+        }
+        .menu{
+            display: $dF;
+            align-items: $AiC;
+            width: 100%;
+            justify-content: flex-end;
+            margin-right: 50px;
+            .menu-items{
+                ul{
+                    display: $dF;
+                    li{
+                        margin-right: 10px;
+                        a{
+                            color: white;
+                            font-weight: 600;
+                            font-size: $MainF-S;
+                        }
+                    }
+                }
+            }
+            .register-button{
+                @include button;
+                margin-left: 20px;
+            }           
+        }
+    }
+    .intro{
+        width: 550px;
+        height: 300px;
+        display: inline-block;
+        position: absolute;
+        left: 110px;
+        top: 180px;
+        h1{
+            color: white;
+            font-size: 80px;
+        }
+        p{
+            color: white;
+            font-size: 30px;
+            padding-top: 10px;
+        }
+        h2{
+            color: $secondColor;
+            font-size: 40px;
+            padding-top: 25px;
+        }
+    }
+    #waves{
+        width: 100%;
+        height: 160px;
+        background: url(../img/swoosh-lower-white.svg) no-repeat;
+        position: absolute;
+        top: 484px;
+    }
+}
+.spaceforsection{
+    width: 100%;
+    height: 50px;
+}

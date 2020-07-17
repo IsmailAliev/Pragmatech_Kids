@@ -1,0 +1,6 @@
+#parents{
+    @include section;
+    background-color: #55cee2;
+    background: url(../img/waves-top-layered.svg), url(../img/hero-mc-dolphins.svg), linear-gradient(180deg,#3b80ed 15%,#55cee2 85%);
+    background-repeat: no-repeat;
+}

@@ -1,0 +1,45 @@
+#explore{
+    @include section;
+    height: 730px;
+    .explore-header{
+        @include header;
+        @include df-jcc;
+        margin-top: 100px;
+        .explore-header-inner{
+            width: 90%;
+            h2{
+                @include header-text-h2;
+            }
+            p{
+                @include header-text-p;
+                font-size: 16px;
+                padding-top: 15px;
+            }
+        }
+    }
+    .explore-block{
+        @include column-block;
+        height: 500px;
+        @include df-jcc;
+        margin-top: 50px;
+        .explore-container{
+            @include column-container;
+            @include df-jcc;
+            .explore-items1{
+                @include section-columns;
+                @include explore-items-head;
+                border-color: #7561a7;
+            }
+            .explore-items2{
+                @include section-columns;
+                @include explore-items-head;
+                border-color: #62b14c;
+            }
+            .explore-items3{
+                @include section-columns;
+                @include explore-items-head;
+                border-color: #de6f46;
+            }
+        }
+    }
+}

@@ -1,0 +1,15 @@
+@import 'common/variables';
+@import 'common/mixin';
+@import 'sections/main';
+@import 'sections/courses';
+@import 'sections/explore';
+@import 'sections/parents';
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Montserrat Alternates';
+    list-style: none;
+    text-decoration: none;
+}
